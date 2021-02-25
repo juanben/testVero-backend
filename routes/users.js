@@ -11,7 +11,7 @@ router.use(function timeLog(req, res, next) {
 });
 
 router.post("/auth", function (req, res) {
-    query = "select * from USER where Code = ? and state = 0";
+    query = "select * from USER where Code = ?";
 
     let user = [req.body.code];
 

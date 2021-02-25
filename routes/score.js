@@ -31,11 +31,10 @@ router.post("/:id", async function (req, res) {
         connection.query(query, user, function (err, rows, fields) {
             if (err) throw err;
             resolve(rows)
-            res.status(200).json(rows);
         });
     });
     await promise
-    let query2 = "update USER  set name = 1 where id = ?";
+    let query2 = "update USER  set state = 1  where idUSER = ?";
     let data = [req.params.id];
     connection.query(query2, data, function (err, rows, fields) {
         if (err) throw err;
