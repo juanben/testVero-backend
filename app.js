@@ -1,4 +1,4 @@
-var conf=require("config.json") ;
+var conf=require("./config.json") ;
 const express = require("express");
 const app = express();
 const port = conf.port;

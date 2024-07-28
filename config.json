@@ -3,8 +3,8 @@
         "host": "localhost",
         "user": "root",
         "password": "root",
-        "database": "TestDB",
-        "port":"3000",
-        "modificador":"Ale"
-    }
+        "database": "TestDB"
+    },
+    "port":3000,
+    "modificador":"Ale"
 }
