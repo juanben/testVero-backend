@@ -1,7 +1,7 @@
 # testVero-backend
 Backend test psicológico verónica Maldonado
 
-#Como Compilar
+## Como Compilar
 Se requiere node.js instalado y express.js
 * Ejecutar npm install
 * Ejecutar npm update
