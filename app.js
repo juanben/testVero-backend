@@ -1,6 +1,7 @@
+var conf=require("config.json") ;
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = conf.port;
 
 
 app.use(function (req, res, next) {
@@ -13,6 +14,7 @@ app.use(function (req, res, next) {
     next();
 });
 
+console.log("Código realizado por "+conf.modificador)
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 app.use(bodyParser.json({ limit: "50mb" }));
